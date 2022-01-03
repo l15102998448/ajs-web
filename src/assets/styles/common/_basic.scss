@@ -1,0 +1,46 @@
+// 文本字体大小和lineHeight的配合设置
+$textList: (
+	(
+		size: 12,
+		line: 20
+	),
+	(
+		size: 14,
+		line: 20
+	),
+	(
+		size: 16,
+		line: 22
+	),
+	(
+		size: 18,
+		line: 24
+	),
+	(
+		size: 20,
+		line: 26
+	),
+	(
+		size: 24,
+		line: 32
+	),
+	(
+		size: 28,
+		line: 40
+	),
+	(
+		size: 36,
+		line: 48
+	),
+	(
+		size: 38,
+		line: 54
+	),
+	(
+		size: 48,
+		line: 60
+	)
+);
+// 边距基数
+$sideBasic: 4; // padding、margin边距的基数值
+$spaceMax: 42; // 边距基数的最大倍数

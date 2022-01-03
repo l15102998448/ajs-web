@@ -1,0 +1,19 @@
+.smBox{
+    width: 10px;
+    height: 10px;
+    background-color:#ff5c35;
+}
+.w-line{
+    display: block;
+    margin: 0;
+    margin-top: -2.5px;
+    padding: 0;
+    top: 50%;
+    width: 37px;
+    height: 1px;
+    font-size: 0;
+    border-bottom-width: 5px;
+    border-bottom-style: dotted;
+    border-bottom-color: #ff5c35;
+    box-shadow: 0 0 0 transparent;
+}

@@ -1,0 +1,73 @@
+$colList: 25;
+@for $i from 1 to $colList {
+    .col-#{$i} {
+        width: percentage(1/24 * $i);
+    }
+}
+/*
+* class样式生成示例
+* text-12、text-14。。。
+*/
+@for $i from 1 through length($textList) {
+	$item: nth($textList, $i);
+	.text-#{map-get($item, size)} {
+		font-size: #{map-get($item, size)}px;
+		line-height: #{map-get($item, line)}px;
+	}
+}
+/* TODO: 边距样式******Start****** */
+/* 该文件用于padding和margin边距集合公共class */
+// margin: n * 4 px 显示方式, $max=> $sideBasic的最大倍数
+/*
+* class样式生成示例
+* m-4、mx-4、mr-4。。。
+* p-4、px-4、pr-4。。。
+*/
+@for $i from 0 through $spaceMax {
+	.m-#{$i * $sideBasic} {
+		margin: $i * $sideBasic + px;
+	}
+	.mx-#{$i * $sideBasic} {
+		margin-left: $i * $sideBasic + px;
+		margin-right: $i * $sideBasic + px;
+	}
+	.my-#{$i * $sideBasic} {
+		margin-top: $i * $sideBasic + px;
+		margin-bottom: $i * $sideBasic + px;
+	}
+	.mt-#{$i * $sideBasic} {
+		margin-top: $i * $sideBasic + px;
+	}
+	.mr-#{$i * $sideBasic} {
+		margin-right: $i * $sideBasic + px;
+	}
+	.mb-#{$i * $sideBasic} {
+		margin-bottom: $i * $sideBasic + px;
+	}
+	.ml-#{$i * $sideBasic} {
+		margin-left: $i * $sideBasic + px;
+	}
+	.p-#{$i * $sideBasic} {
+		padding: $i * $sideBasic + px;
+	}
+	.px-#{$i * $sideBasic} {
+		padding-left: $i * $sideBasic + px;
+		padding-right: $i * $sideBasic + px;
+	}
+	.py-#{$i * $sideBasic} {
+		padding-top: $i * $sideBasic + px;
+		padding-bottom: $i * $sideBasic + px;
+	}
+	.pt-#{$i * $sideBasic} {
+		padding-top: $i * $sideBasic + px;
+	}
+	.pr-#{$i * $sideBasic} {
+		padding-right: $i * $sideBasic + px;
+	}
+	.pb-#{$i * $sideBasic} {
+		padding-bottom: $i * $sideBasic + px;
+	}
+	.pl-#{$i * $sideBasic} {
+		padding-left: $i * $sideBasic + px;
+	}
+}

@@ -1,0 +1,101 @@
+/*FlexBox 布局*/
+.d-flex {
+	display: flex;
+}
+/* 一.换行 */
+//超出按父级高度平分
+.flex-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+// 与wrap相反
+.flex-wrap-reverse {
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+/* 二.垂直排列(x，y轴) */
+// 从上往下 == 顶对齐
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+// 与column 相反
+.flex-column-reverse {
+	display: flex;
+	flex-direction: column-reverse;
+}
+// 从左往右 == 左对齐
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+// 与row 相反
+.flex-row-reverse {
+	display: flex;
+	flex-direction: row-reverse;
+}
+/* 三. 水平对齐（x轴）*/
+// 水平左对齐
+.flex-x-start {
+	display: flex;
+	justify-content: flex-start;
+}
+//水平右对齐
+.flex-x-end {
+	display: flex;
+	justify-content: flex-end;
+}
+// 水平居中
+.flex-x-center {
+	display: flex;
+	justify-content: center;
+}
+// 两端对齐 (第一个元素和最后一个元素距离左右两边的距离为0； 其他元素间的距离一样)
+.flex-x-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-x-around {
+	display: flex;
+	justify-content: space-around;
+}
+/*四. 垂直对齐（y轴）*/
+//垂直下对齐
+.flex-y-end {
+	display: flex;
+	align-items: flex-end;
+}
+// 垂直居中
+.flex-y-center {
+	display: flex;
+	align-items: center;
+}
+//文字基线对齐
+.align-items-baseline {
+	display: flex;
+	align-items: baseline;
+}
+// 水平垂直居中对齐
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+// 水平居中底部对齐
+.flex-center-end {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+// 元素水平两端，垂直居中对齐
+.flex-between-center {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+// 让所有盒子模型对象的子元素都具有相同长度
+.flex-auto {
+	display: flex;
+	flex: auto;
+}
