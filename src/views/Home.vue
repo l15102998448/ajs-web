@@ -74,7 +74,14 @@
         </div>
         <div class="info_bottom flex-x-between mt-20">
           <div class="info_bottom_left">
-            <div></div>
+              <el-row>
+                <div>
+                  <h5 class="text-18 mb-12">网站优化之常见问题的一些问题</h5>
+                  <p class="text-14">网站是企业对外展示信息的重要方式之一，因此，很多企业都搭建了自己的网站，但是，要想发挥网站应有的作用，企业还需要对网站进行推广……</p>
+                  <span><i class="el-icon-right"></i> 查看详情</span>
+                </div> 
+
+              </el-row>
           </div>
           <div class="ml-32 info_bottom_right">
             <div class="mb-12">
@@ -96,15 +103,53 @@
         </div>
       </div>
     </div>
+    <div class="contact-box">
+      <div class="contact-sub-box">
+        <el-row :gutter="20">
+          <el-col :span="16">
+              <ul class="grid-content_01 text-14 ml-160 mb-48">
+                <li>
+                  <i class="el-icon-location-information text-16 mr-8"></i>
+                  <span style="white-space:pre">地址：中国北京市东城区某某大厦8-88室</span>
+                </li>
+                 <li>
+                  <i class="el-icon-phone-outline text-16 mr-8"></i>
+                  <span style="white-space:pre">电话：400xxx8888</span>
+                </li>
+                 <li>
+                  <i class="el-icon-printer text-16 mr-8"></i>
+                  <span style="white-space:pre">传真：010xxxx88888</span>
+                </li>
+                 <li>
+                  <i class="el-icon-message text-16 mr-8"></i>
+                  <span style="white-space:pre">邮箱：name@example.xxx</span>
+                </li>
+              </ul>
+              <div class="flex-x-start ml-160">
+                <el-button round>更多联系信息</el-button>
+              </div>
+          </el-col>
+          <el-col :span="8">
+            <div class="grid-content_02">
+              <div>您的需求是我们</div>
+              <div class="d-flex">合作的开始 <p class="smBox"></p></div>
+              <p class="text-24 mt-40">我们时刻期待着与您的沟通</p>
+              <p class="mt-12">We look forward to communicating with you all the time</p>
+            </div>
+            </el-col>
+        </el-row>
+      </div>
+    </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from "../components/header.vue"
-// import Footer from "../components/footer.vue";
+import Footer from "../components/footer.vue";
 export default {
     name: "Home",
-    // components: { Footer },
+    components: { Header, Footer },
     data() {
         return {};
     },
@@ -113,7 +158,6 @@ export default {
             console.log("val", val);
         }
     },
-    components: { Header }
 }
 </script>
 <style lang="scss" scoped>

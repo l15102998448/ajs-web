@@ -1,15 +1,13 @@
 <!-- 底部组建 -->
 <template>
     <div class="footer">
-       <div class="footer-bkg flex-x-between">
-           <div>
-               <h1>建立安全的信息化系统</h1>
-               <p>呵 护 您 的 业 务 及 数 据 健 康 安 全</p>
-               <p>Establish a safe and reliable information system to protect the health and safety of your business and data</p>
-           </div>
-           <div class="img-box"></div>
-       </div> 
-       <p class="flex-x-center">版权所有 © 某某有限公司</p>
+        <div class="footer-bkg flex-x-between text-14">
+            <p>一站式服务  客户的成功是我们大的荣耀</p>
+            <p class="flex-x-center">版权所有 © 亚经讯有限公司</p>
+        </div> 
+        <div class="footer-bottom text-12">
+            <span>本网站支持 &nbsp; | &nbsp; IPv6 &nbsp; | &nbsp; Powered by CloudDream</span>
+        </div>
     </div>
 </template>
 
@@ -32,12 +30,17 @@ export default {
 </script>
 <style lang="scss" scoped>
 .footer{
-    background: yellow;
+    background: rgb(34, 34, 34);
     .footer-bkg{
-        background: rgb(31, 37, 65);
+        width: 80%;
+        margin: 0 auto;
     }
     p{
-        background: rgb(18, 22, 43);
+        color:#aaaaaa;
+        line-height: 60px;
+    }
+    .footer-bottom{
+        background: #fff;
     }
 }
 

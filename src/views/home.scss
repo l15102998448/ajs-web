@@ -11,7 +11,7 @@
     transition: all,.3s;
     .el-divider{
       position: absolute;
-      top: 69px;
+      top: 69info_bottom_leftpx;
       background: #d1d6d96e;
       margin: 0;
     }
@@ -195,17 +195,40 @@
           .info_bottom_left{
             width: 590px;
             height: 392px;
+            position: relative;
             background-image: url('../assets/images/info_bg.jpeg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 50%;
-            // background: radial-gradient( #000, #fff);
-            div{
+           
+            .el-row{
               width: 590px;
               height: 387px;
+              color: #fff;
               background-image: url('../assets/images/info_bg_02.png');
               background-repeat: no-repeat;
               background-size: cover;
+              div{
+                position: absolute;
+                top: 260px;
+                left: 20px;
+                text-align: left;
+                margin-right: 10px;
+                h5{
+                  font-weight: bold;
+                }
+                p{
+                  line-height: 1.75;
+                  color: #f4d4cc;
+                  word-wrap: break-word
+                }
+                span{
+                  font-size: 12px;
+                  float: right;
+                  margin-right: 16px;
+                  cursor: pointer;
+                }
+              }
             }
           }
           .info_bottom_right{
@@ -229,6 +252,53 @@
           }
         }
        
+      }
+    }
+    .contact-box{
+      height: 513px;
+      background-color: #fff;
+      .contact-sub-box{
+        width: 959px;
+        height: 100%;
+        background-color: rgb(247, 247, 250);
+        .el-row {
+          padding-top: 160px;
+          position: relative;
+          margin-left: 100px !important;
+          button{
+            color: #fff;
+            border: 1px solid #ff5c35;
+            background-color: #ff5c35;
+          }
+        }
+        .grid-content_01{
+            color: #666;
+            text-align: left;
+            li{
+              line-height: 2;
+            }
+        }
+        .grid-content_02{
+          width: 450px;
+          text-align: left;
+          position: absolute;
+          left: 491px;
+          div{
+            font-size: 54px;
+            color: #333333;
+            line-height:1.2;
+            font-weight: bold;
+          }
+          p:last-child {
+            color:#888888;
+            font-size: 18px;
+          }
+          
+          .smBox{
+            top: 100px;
+            left: 284px;
+          }
+        }
       }
     }
   }
