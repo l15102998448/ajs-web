@@ -1,7 +1,7 @@
 <template>
   <div class="home-box">
     <el-divider />
-    <Header />
+    <Header activeIndex="/home" />
     <div class="home">
        <div class="w-banner-content">
         <div class="smartAbs">
@@ -161,6 +161,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import './home'
+@import '../assets/styles/otherFile/home'
 
 </style>
