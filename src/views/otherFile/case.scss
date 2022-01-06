@@ -1,0 +1,32 @@
+.case-page{
+    .editableContent{
+        width: 80%;
+        margin: 0 auto;
+        padding: 70px 0;
+        font-family:Verdana,Geneva,sans-serif;
+        text-align: left;
+        h1{
+            color:#333333;
+            font-size: 46px;
+            font-weight: bold;
+            line-height: 80px;
+            span{
+                color: #ff5c35;
+            }
+        }
+        p{
+            b{
+                border-left-width: 3px;
+                border-left-style: solid;
+                border-left-color: #ff5c35;
+            }
+        }
+    }
+    .case-list{
+        height: 300px;
+        background-color: #ffffff;
+    }
+    .case-list:nth-child(odd){
+        background-color: rgb(247, 247, 250);
+    }
+}

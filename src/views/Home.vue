@@ -161,6 +161,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../assets/styles/otherFile/home'
+@import '../views//otherFile/home'
 
 </style>

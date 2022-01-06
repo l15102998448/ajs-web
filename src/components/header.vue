@@ -1,17 +1,19 @@
 <!-- 头部组建 -->
 <template>
-    <div class="home_top flex-x-between flex-y-center">
-        <img src="../assets/images/logo.png"/>
-       aaa=  {{activeIndex}}
-        <el-menu :default-active="activeIndex" 
-            class="el-menu-demo"
-            mode="horizontal"
-            text-color="#fff"
-            active-text-color="#ff5c35"
-            @select="handleSelect">
-            <el-menu-item v-for="(item,index) in titleList" :index="item.index" :key="index">{{item.label}}</el-menu-item>
-        </el-menu>
+    <div :class="[ hasBg?'top-header':'']">
+        <div class="home_top flex-x-between flex-y-center">
+            <img src="../assets/images/logo.png"/>
+            <el-menu :default-active="activeIndex" 
+                class="el-menu-demo"
+                mode="horizontal"
+                text-color="#fff"
+                active-text-color="#ff5c35"
+                @select="handleSelect">
+                <el-menu-item v-for="(item,index) in titleList" :index="item.index" :key="index">{{item.label}}</el-menu-item>
+            </el-menu>
+        </div>
     </div>
+   
 </template>
 
 <script>
@@ -20,6 +22,10 @@ export default {
         activeIndex: {
             type: String,
             default: '/home'
+        },
+        hasBg: {
+            type: Boolean,
+            default: false
         }
     },
     data() {
@@ -63,6 +69,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 /* @import url(); 引入css类 */
+.top-header{
+    background: rgb(34, 34, 34);
+}
 .home_top{
     width:80%;
     margin: 0 auto;
@@ -78,6 +87,7 @@ export default {
     }
     .el-menu-item {
       transition: none;
+      margin-left: 20px !important;
     }
     .el-menu-item:focus, .el-menu-item:hover,.el-menu-item.is-active{
        background: none !important;
