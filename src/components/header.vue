@@ -3,7 +3,7 @@
     <div :class="[ hasBg?'top-header':'']">
         <div class="home_top flex-x-between flex-y-center">
             <img src="../assets/images/logo.png"/>
-            <el-menu :default-active="activeIndex" 
+            <el-menu :default-active="activeIndex"
                 class="el-menu-demo"
                 mode="horizontal"
                 text-color="#fff"
@@ -13,7 +13,7 @@
             </el-menu>
         </div>
     </div>
-   
+
 </template>
 
 <script>
@@ -36,7 +36,7 @@ export default {
                 { index:'/about', label: '关于我们', path: '/about'},
                 { index:'/case', label: '客户案例', path: '/case'},
                 { index:'/news', label: '新闻资讯', path: '/news'},
-                { index:'/service', label: '我们的服务', path: '/service'},
+                // { index:'/service', label: '我们的服务', path: '/service'},
                 { index:'/contact', label: '联系我们', path: '/contact'},
 
 
