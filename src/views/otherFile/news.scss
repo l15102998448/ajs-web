@@ -1,0 +1,155 @@
+.news-page{
+    .news-bg-style{
+        background-image: url("../assets/images/news-bg.jpeg");
+        background-position: 0% 50%;
+        background-size: cover;
+    }
+    .el-divider{
+        position: absolute;
+        top: 69px;
+        background: #d1d6d96e;
+        margin: 0;
+    }
+    .news-container{
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        min-height: 429px;
+        .editableContent{
+            font-family:Verdana,Geneva,sans-serif;
+            text-align: left;
+            h1{
+                color:#ffffff;
+                font-size: 46px;
+                font-weight: bold;
+                line-height: 80px;
+                span{
+                    color: #ff5c35;
+                }
+            }
+            p{
+                color:#bbbbbb;
+                b{
+                    border-left-width: 3px;
+                    border-left-style: solid;
+                    border-left-color: #ff5c35;
+                }
+            }
+        }
+    }
+    .question-box{
+        background: #ffffff;
+        .question-container {
+            /*width: 80%;*/
+            margin: 0 auto;
+            min-height: 600px;
+            ul > li{
+                box-sizing: border-box;
+                padding: 56px 30px 0;
+                width: 380px;
+                height: 310px;
+                min-width: 100px;
+                margin: 0 0 30px 30px;
+                overflow: hidden;
+                float: left;
+                list-style: none;
+                cursor: pointer;
+                background-color: #FFFFFF;
+                text-align: left;
+                box-shadow: 0 5px 30px 0 #0000001a;
+                transition: all .3s ease-in-out;
+                -webkit-transition: all .3s ease-in-out;
+
+                .w-al-date{
+                    color: #989898;
+                    font-weight: bold;
+                    font-style: normal;
+                    font-family: Tahoma;
+                    line-height: 20px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                h5{
+                    font-size: 18px;
+                    color: #262626;
+                    font-weight: bold;
+                    font-style: normal;
+                    text-decoration: none;
+                    font-family: 'Noto Sans CJK';
+                    line-height: 22px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                }
+                .w-al-desc {
+                    color: #989898;
+                    font-weight: normal;
+                    height: calc(22px * 2);
+                    line-height: 22px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    overflow: hidden;
+                }
+                .w-al-btn{
+
+                    color: #5f467b;
+                    font-weight: bold;
+                    font-style: normal;
+                    text-decoration: none;
+                    font-family: 'Noto Sans CJK';
+                    line-height: 17px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            ul > li:hover {
+                transform: perspective(900px) translate3d(0, -8px, 8px);
+                background-color: rgb(255, 92, 53);
+                box-shadow: 0 5px 30px 0 #0000001a;
+                box-sizing: border-box;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                -webkit-transition: all .3s ease-in-out;
+                .w-al-date,.w-al-btn, .w-al-desc,h5{
+                    color: #ffffff !important;
+                }
+            }
+        }
+    }
+    .question-list{
+        background: #ffffff;
+        .quest-con{
+            width: 80%;
+            margin: 0 auto;
+            padding: 70px;
+            min-height: 600px;
+            text-align: justify;
+             text-align: left;
+
+            .w-title{
+                color: #573d74;
+                font-weight: bold;
+                font-style: normal;
+                line-height: 40px;
+            }
+            .quest-desc{
+                color: #404040;
+                line-height: 1.5;
+                line-height: 24px;
+                word-wrap: break-word;
+                word-break: normal;
+            }
+            h3{
+                color:#ff5c35;
+                font-weight: bold;
+            }
+            div > span,p{
+                line-height:1.75;
+            }
+        }
+    }
+}
